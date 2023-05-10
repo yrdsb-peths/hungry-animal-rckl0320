@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * Bear(wombat) world
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Rick) 
+ * @version (May 2019)
  */
 public class MyWorld extends World
 {
@@ -20,7 +20,16 @@ public class MyWorld extends World
         super(600, 400, 1);
         Bear sjo = new Bear();
         addObject(sjo, 150, 200);
+        createBread();
+    }
+    
+    
+    //randomizes bread creation
+    public void createBread()
+    {
         Bread bred = new Bread();
-        addObject(bred, 350, 0);
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(bred, x, y);
     }
 }
