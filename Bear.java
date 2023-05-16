@@ -28,7 +28,7 @@ public class Bear extends Actor
         
         eat();  
     }
-    
+    //eat bread and spawn new bread
     public void eat()
     {
         if(isTouching(Bread.class))

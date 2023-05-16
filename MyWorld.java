@@ -20,6 +20,7 @@ public class MyWorld extends World
         super(600, 400, 1);
         Bear sjo = new Bear();
         addObject(sjo, 150, 200);
+        Label scoreLabel = new Label();
         createBread();
     }
     
