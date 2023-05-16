@@ -18,11 +18,11 @@ public class Bear extends Actor
     public void act()
     {
         if(Greenfoot.isKeyDown("left")){
-            move(-3);
+            move(-4);
         }
         
         if(Greenfoot.isKeyDown("right")){
-            move(3);
+            move(4);
         }
         
         
@@ -36,6 +36,7 @@ public class Bear extends Actor
             removeTouching(Bread.class);
             MyWorld world = (MyWorld) getWorld();
             world.createBread();
+            world.increaseScore();
         }
     }
 }
