@@ -18,11 +18,11 @@ public class Bear extends Actor
     public void act()
     {
         if(Greenfoot.isKeyDown("left")){
-            move(-4);
+            move(-5);
         }
         
         if(Greenfoot.isKeyDown("right")){
-            move(4);
+            move(5);
         }
         
         

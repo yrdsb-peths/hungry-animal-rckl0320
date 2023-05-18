@@ -15,7 +15,7 @@ public class Bread extends Actor
     public void act()
     {
         // Add your action code here.
-        setLocation(getX(), getY() + 2);
+        setLocation(getX(), getY() + 4);
         
         //remove apple and game over
         MyWorld world =(MyWorld) getWorld();
