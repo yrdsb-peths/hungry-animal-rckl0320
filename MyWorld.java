@@ -10,6 +10,8 @@ public class MyWorld extends World
 {
     public int score = 0;
     Label scoreLabel = new Label(0, 100);
+    
+    
     /**
      * Constructor for objects of class MyWorld.
      * 

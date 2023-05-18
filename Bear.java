@@ -8,11 +8,18 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bear extends Actor
 {
+    GreenfootSound breadEat = new GreenfootSound("good.mp3");
+    GreenfootImage idleWalk = new GreenfootImage("images/bear_walk/bearWalk0.png");
     /**
      * Act - do whatever the Bear wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
+    //constructor   
+    public Bear()
+    {
+        setImage(idleWalk);
+    }
     
     
     public void act()
@@ -34,6 +41,7 @@ public class Bear extends Actor
         if(isTouching(Bread.class))
         {
             removeTouching(Bread.class);
+            breadEat.play();
             MyWorld world = (MyWorld) getWorld();
             world.createBread();
             world.increaseScore();
