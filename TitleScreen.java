@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TitleScreen here.
+ * Title Screen.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Rick 
+ * @version May 29, 2023
  */
 public class TitleScreen extends World
 {
@@ -17,10 +17,10 @@ public class TitleScreen extends World
     public TitleScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(600, 400, 1);
 
         addObject(titleLabel, getWidth()/2, getHeight()/2);
-        addObject(pressSpace, getWidth()/2
+        addObject(pressSpace, getWidth()/2, 300);
         prepare();
     }
 
@@ -42,8 +42,6 @@ public class TitleScreen extends World
      */
     private void prepare()
     {
-        Bread bread = new Bread();
-        addObject(bread,180,318);
         
     }
 }
