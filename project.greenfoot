@@ -2,7 +2,7 @@
 class.Bear.image=wombat.png
 class.Bread.image=bread.png
 class.MyWorld.image=forest.jpg
-class.TitleScreen.image=bake1.jpg
+class.TitleScreen.image=forest.jpg
 class.bare.image=bearWalk0.png
 class.brot.image=bread.png
 dependency1.from=MyWorld
